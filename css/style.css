@@ -1,0 +1,28 @@
+.content {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 30px;
+	margin-top: 30px;
+}
+
+.content-movie {
+	display: flex;
+}
+
+.content-movie__image {
+	padding: 5px;
+}
+
+@media screen and (min-width: 600px) {
+	.content {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.single-movie {
+	flex-direction: column;
+}
+
+.single-movie img {
+	height: 400px;
+}
