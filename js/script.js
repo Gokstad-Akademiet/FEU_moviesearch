@@ -93,8 +93,8 @@ movies.forEach(function (movie, index) {
 
 	// Legger til HTML-kode til innholdet i "content" elementet
 	content.innerHTML += `
-	<a href="${window.location.origin}/film.html?index=${index}&title=${movie.title}" class="no-link">
-		<div class="content-movie">
+	<a href="${window.location.href}/film.html?index=${index}&title=${movie.title}" class="no-link">
+	<div class="content-movie">
 			<div class="content-movie__image">
 				<img src=${movie.coverimage} height="200" width="auto" alt="" />
 			</div>
@@ -148,7 +148,7 @@ function filterTitleMovies() {
 
 		// Legger til HTML-kode til innholdet i "content" elementet
 		content.innerHTML += `
-		<a href="${window.location.origin}/film.html?index=${index}&title=${movie.title}" class="no-link">
+		<a href="${window.location.href}/film.html?index=${index}&title=${movie.title}" class="no-link">
 			<div class="content-movie">
 				<div class="content-movie__image">
 					<img src=${movie.coverimage} height="200" width="auto" alt="" />
@@ -201,7 +201,7 @@ function filterYearMovies() {
 
 		// Legger til HTML-kode til innholdet i "content" elementet
 		content.innerHTML += `
-		<a href="${window.location.origin}/film.html?index=${index}&title=${movie.title}" class="no-link">
+		<a href="${window.location.href}/film.html?index=${index}&title=${movie.title}" class="no-link">
 		<div class="content-movie">
 			<div class="content-movie__image">
 				<img src=${movie.coverimage} height="200" width="auto" alt="" />
